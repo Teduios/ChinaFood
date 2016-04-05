@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="oYe-9F-GqE" customClass="HPDiaryStepCell">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYe-9F-GqE" id="s4N-hv-wLd">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpQ-tY-LMd">
+                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93719297647476196" green="0.54684543609619141" blue="0.14949324727058411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="CbG-sh-DvY"/>
+                            <constraint firstAttribute="width" constant="30" id="tLJ-N1-pPM"/>
+                        </constraints>
+                        <state key="normal" title="1"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXD-mq-fbg">
+                        <rect key="frame" x="150" y="18" width="224" height="47"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y6I-ya-ibd">
+                        <rect key="frame" x="50" y="10" width="90" height="75"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="2yP-kq-naR"/>
+                            <constraint firstAttribute="width" constant="44" id="e08-iw-i4f"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="e08-iw-i4f"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="DXD-mq-fbg" firstAttribute="top" secondItem="s4N-hv-wLd" secondAttribute="topMargin" constant="10" id="8ZZ-hI-fHX"/>
+                    <constraint firstAttribute="trailing" secondItem="DXD-mq-fbg" secondAttribute="trailing" constant="10" id="DVq-1o-EGQ"/>
+                    <constraint firstAttribute="bottom" secondItem="DXD-mq-fbg" secondAttribute="bottom" constant="30" id="ap2-Wo-BBW"/>
+                    <constraint firstItem="XpQ-tY-LMd" firstAttribute="leading" secondItem="s4N-hv-wLd" secondAttribute="leading" constant="10" id="gXT-W3-N7V"/>
+                    <constraint firstAttribute="bottom" secondItem="Y6I-ya-ibd" secondAttribute="bottom" constant="10" id="hq5-Qo-VkA"/>
+                    <constraint firstItem="Y6I-ya-ibd" firstAttribute="top" secondItem="s4N-hv-wLd" secondAttribute="top" constant="10" id="miJ-ig-nqS"/>
+                    <constraint firstItem="XpQ-tY-LMd" firstAttribute="top" secondItem="s4N-hv-wLd" secondAttribute="top" constant="10" id="r8U-1J-hCb"/>
+                    <constraint firstItem="DXD-mq-fbg" firstAttribute="trailing" secondItem="s4N-hv-wLd" secondAttribute="trailingMargin" constant="10" id="rDq-ND-8B8"/>
+                    <constraint firstItem="Y6I-ya-ibd" firstAttribute="leading" secondItem="XpQ-tY-LMd" secondAttribute="trailing" constant="10" id="tOt-96-2uA"/>
+                    <constraint firstItem="DXD-mq-fbg" firstAttribute="leading" secondItem="Y6I-ya-ibd" secondAttribute="trailing" constant="10" id="uXo-yb-cAd"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="rDq-ND-8B8"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="detailImage" destination="Y6I-ya-ibd" id="EWs-Ya-cdS"/>
+                <outlet property="numberButton" destination="XpQ-tY-LMd" id="qeD-HE-npw"/>
+                <outlet property="stepLabel" destination="DXD-mq-fbg" id="FFZ-sn-Zne"/>
+            </connections>
+            <point key="canvasLocation" x="110" y="300"/>
+        </tableViewCell>
+    </objects>
+</document>
